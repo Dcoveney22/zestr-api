@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ZestrApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+26785a984010fb6bb5b2338230bcbc811ae55e5a")]
 [assembly: System.Reflection.AssemblyProductAttribute("ZestrApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ZestrApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
