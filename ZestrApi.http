@@ -1,0 +1,213 @@
+@ZestrApi_HostAddress = http://localhost:5141
+
+# GET {{ZestrApi_HostAddress}}/weatherforecast/
+# Accept: application/json
+###
+POST {{ZestrApi_HostAddress}}/api/staff
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "department": "Bar",
+  "personnelType": 0,
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/menuitem
+Content-Type: application/json
+
+{
+  "name": "House Red",
+  "price": 7.50,
+  "department": "Bar",
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/menuitem
+Content-Type: application/json
+
+{
+  "name": "Craft Lager",
+  "price": 6.00,
+  "department": "Bar",
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/menuitem
+Content-Type: application/json
+
+{
+  "name": "Aperol Spritz",
+  "price": 9.50,
+  "department": "Bar",
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/menuitem
+Content-Type: application/json
+
+{
+  "name": "Espresso Martini",
+  "price": 10.00,
+  "department": "Bar",
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/menuitem
+Content-Type: application/json
+
+{
+  "name": "Sticky Toffee Pudding",
+  "price": 7.00,
+  "department": "Kitchen",
+  "isActive": true
+}
+
+###
+GET {{ZestrApi_HostAddress}}/api/menuitem
+
+###
+POST {{ZestrApi_HostAddress}}/api/weeklyspecial
+Content-Type: application/json
+
+{
+  "menuItemId": "019e5a88-b1d8-7b7d-823b-b7f31bab1ae4",
+  "specialLevel": "Gold",
+  "weekCommencing": "2026-05-26T00:00:00Z",
+  "isActive": true
+}
+
+###
+GET {{ZestrApi_HostAddress}}/api/weeklyspecial/week/2026-05-26
+
+###
+POST {{ZestrApi_HostAddress}}/api/staff
+Content-Type: application/json
+
+{}
+
+###
+POST {{ZestrApi_HostAddress}}/api/staff
+Content-Type: application/json
+
+{
+  "firstName": "Alexandraaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+  "lastName": "Smith",
+  "department": "Bar",
+  "personnelType": 0,
+  "isActive": true
+}
+
+
+
+###
+POST {{ZestrApi_HostAddress}}/api/sales
+Content-Type: multipart/form-data; boundary=boundary123
+
+--boundary123
+Content-Disposition: form-data; name="file"; filename="test-sales.csv"
+Content-Type: text/csv
+
+< ./test-sales.csv
+
+--boundary123
+Content-Disposition: form-data; name="weekCommencing"
+
+2026-05-26T00:00:00Z
+--boundary123--
+
+
+
+
+### Add Staff Members
+POST {{ZestrApi_HostAddress}}/api/staff
+Content-Type: application/json
+
+{
+  "firstName": "Sarah",
+  "lastName": "Jones",
+  "department": "Bar",
+  "personnelType": "Staff",
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/staff
+Content-Type: application/json
+
+{
+  "firstName": "Marcus",
+  "lastName": "Williams",
+  "department": "Bar",
+  "personnelType": "Staff",
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/staff
+Content-Type: application/json
+
+{
+  "firstName": "Priya",
+  "lastName": "Patel",
+  "department": "Bar",
+  "personnelType": "ShiftLeader",
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/staff
+Content-Type: application/json
+
+{
+  "firstName": "Tom",
+  "lastName": "Clarke",
+  "department": "Kitchen",
+  "personnelType": "Staff",
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/staff
+Content-Type: application/json
+
+{
+  "firstName": "Ella",
+  "lastName": "Morrison",
+  "department": "Floor",
+  "personnelType": "Staff",
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/staff
+Content-Type: application/json
+
+{
+  "firstName": "James",
+  "lastName": "Okafor",
+  "department": "Bar",
+  "personnelType": "Staff",
+  "isActive": true
+}
+
+###
+POST {{ZestrApi_HostAddress}}/api/staff
+Content-Type: application/json
+
+{
+  "firstName": "Lucy",
+  "lastName": "Henderson",
+  "department": "Floor",
+  "personnelType": "ShiftLeader",
+  "isActive": true
+}
+
+###
+GET {{ZestrApi_HostAddress}}/api/staff
