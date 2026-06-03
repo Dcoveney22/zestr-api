@@ -24,6 +24,8 @@ builder.Services.AddScoped<IMenuItemService, MenuItemService>();
 builder.Services.AddScoped<IWeeklySpecialService, WeeklySpecialService>();
 builder.Services.AddScoped<ISalesUploadService, SalesUploadService>();
 builder.Services.AddScoped<IScoringService, ScoringService>();
+builder.Services.AddScoped<IWeeklyResultService, WeeklyResultService>();
+builder.Services.AddScoped<IMonthlyLeaderboardService, MonthlyLeaderboardService>();
 
 builder.Services.AddDbContext<ZestrDbContext>(options =>
 options.UseNpgsql(builder.Configuration.GetConnectionString("DefaultConnection")));

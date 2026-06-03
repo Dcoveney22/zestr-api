@@ -211,3 +211,62 @@ Content-Type: application/json
 
 ###
 GET {{ZestrApi_HostAddress}}/api/staff
+
+###
+GET {{ZestrApi_HostAddress}}/api/monthlyleaderboard?year=2026&month=5
+
+###
+POST {{ZestrApi_HostAddress}}/api/sales/confirm?weekCommencing=2026-05-26T00:00:00Z
+Content-Type: application/json
+
+[
+  {
+    "staffId": "019e6e78-38ab-7470-b6b4-76bf0e21f769",
+    "fullName": "James Okafor",
+    "totalScore": 8200,
+    "weekCommencing": "2026-05-26T00:00:00Z",
+    "place": 1
+  },
+  {
+    "staffId": "019e6e78-242f-73cc-a424-f461e98cf4c9",
+    "fullName": "Priya Patel",
+    "totalScore": 7225,
+    "weekCommencing": "2026-05-26T00:00:00Z",
+    "place": 2
+  },
+  {
+    "staffId": "019e6e78-137c-78a8-af75-59cb69851008",
+    "fullName": "Sarah Jones",
+    "totalScore": 6450,
+    "weekCommencing": "2026-05-26T00:00:00Z",
+    "place": 3
+  }
+]
+
+###
+POST {{ZestrApi_HostAddress}}/api/sales/confirm?weekCommencing=2026-06-02T00:00:00Z
+Content-Type: application/json
+
+[
+  {
+    "staffId": "019e6e78-242f-73cc-a424-f461e98cf4c9",
+    "fullName": "Priya Patel",
+    "totalScore": 7800,
+    "weekCommencing": "2026-06-02T00:00:00Z",
+    "place": 1
+  },
+  {
+    "staffId": "019e6e78-38ab-7470-b6b4-76bf0e21f769",
+    "fullName": "James Okafor",
+    "totalScore": 7100,
+    "weekCommencing": "2026-06-02T00:00:00Z",
+    "place": 2
+  },
+  {
+    "staffId": "019e59ff-b815-73d6-910f-e31bbc32bc2f",
+    "fullName": "John Smith",
+    "totalScore": 5900,
+    "weekCommencing": "2026-06-02T00:00:00Z",
+    "place": 3
+  }
+]

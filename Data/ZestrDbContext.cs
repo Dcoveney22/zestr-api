@@ -13,6 +13,8 @@ namespace ZestrApi.Data
 
         public DbSet<SaleRecord> SaleRecords { get; set; }
 
+        public DbSet<WeeklyResult> WeeklyResults { get; set; }
+
         public ZestrDbContext(DbContextOptions options) : base(options)
         {
 
